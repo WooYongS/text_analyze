@@ -1,0 +1,165 @@
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{"subj":"python learning","text":"good"},"level":"info"}
+{"message":"subj : python learning","level":"info"}
+{"message":"text : good","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"message":"python script error!Error:   File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\nsmc-master\\finalAnalyize.py\", line 69\r\n    tf = term_frequency(token)\r\n                             ^\r\nTabError: inconsistent use of tabs and spaces in indentation\r\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{"subj":"python learning","text":"good"},"level":"info"}
+{"message":"subj : python learning","level":"info"}
+{"message":"text : good","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"message":"python script error!Error:   File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\nsmc-master\\finalAnalyize.py\", line 69\r\n    token = tokenizing(text)\r\n                           ^\r\nTabError: inconsistent use of tabs and spaces in indentation\r\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{"subj":"python learning","text":"good"},"level":"info"}
+{"message":"subj : python learning","level":"info"}
+{"message":"text : good","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"message":"python script error!Error:   File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\nsmc-master\\finalAnalyize.py\", line 69\r\n    token = tokenizing(text)\r\n                           ^\r\nTabError: inconsistent use of tabs and spaces in indentation\r\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{"subj":"python learning","text":"good"},"level":"info"}
+{"message":"subj : python learning","level":"info"}
+{"message":"text : good","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"message":"python script error!Error:   File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\nsmc-master\\finalAnalyize.py\", line 81\r\n    def predict_pos_text(sys.argv[2])\r\n                            ^\r\nSyntaxError: invalid syntax\r\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{"subj":"python learning","text":"good"},"level":"info"}
+{"message":"subj : python learning","level":"info"}
+{"message":"text : good","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"message":"python script error!Error:   File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\nsmc-master\\finalAnalyize.py\", line 82\r\n    def predict_pos_text(str)\r\n                            ^\r\nSyntaxError: invalid syntax\r\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{"subj":"python learning","text":"good"},"level":"info"}
+{"message":"subj : python learning","level":"info"}
+{"message":"text : good","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"level":"info","message":"PythonShell results: %j"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{"subj":"python learning","text":"good"},"level":"info"}
+{"message":"subj : python learning","level":"info"}
+{"message":"text : good","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"level":"info","message":"PythonShell results: %j"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{"subj":"python learning","text":"good"},"level":"info"}
+{"message":"subj : python learning","level":"info"}
+{"message":"text : good","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"level":"info","message":"PythonShell results: %j"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{},"level":"info"}
+{"message":"subj : undefined","level":"info"}
+{"message":"text : undefined","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"message":"python script error!Error: process exited with code 3221225786","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{},"level":"info"}
+{"message":"subj : undefined","level":"info"}
+{"message":"text : undefined","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"level":"info","message":"PythonShell results: %j"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{},"level":"info"}
+{"message":"subj : undefined","level":"info"}
+{"message":"text : undefined","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"level":"info","message":"PythonShell results: %j"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{"subj":"파이썬","text":"좋아요"},"level":"info"}
+{"message":"subj : 파이썬","level":"info"}
+{"message":"text : 좋아요","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"message":"python script error!Error: Using TensorFlow backend.\r\nWARNING:tensorflow:From C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\tensorflow_core\\python\\ops\\resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.\r\nInstructions for updating:\r\nIf using Keras pass *_constraint arguments to layers.\r\n2020-01-16 18:29:15.513424: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)\nWARNING:tensorflow:From C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\tensorflow_core\\python\\ops\\nn_impl.py:183: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.\r\nInstructions for updating:\r\nUse tf.where in 2.0, which has the same broadcast rule as np.where\r\nWARNING:tensorflow:From C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\keras\\backend\\tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.\r\n\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\nsmc-master\\finalAnalyize.py\", line 84, in <module>\r\n    print(List)\r\nUnicodeEncodeError: 'cp949' codec can't encode character '\\xed' in position 2: illegal multibyte sequence\r\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{"subj":"파이썬","text":"좋아요"},"level":"info"}
+{"message":"subj : 파이썬","level":"info"}
+{"message":"text : 좋아요","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"message":"python script error!Error: Using TensorFlow backend.\r\nWARNING:tensorflow:From C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\tensorflow_core\\python\\ops\\resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.\r\nInstructions for updating:\r\nIf using Keras pass *_constraint arguments to layers.\r\n2020-01-16 18:38:19.504952: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)\nWARNING:tensorflow:From C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\tensorflow_core\\python\\ops\\nn_impl.py:183: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.\r\nInstructions for updating:\r\nUse tf.where in 2.0, which has the same broadcast rule as np.where\r\nWARNING:tensorflow:From C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\keras\\backend\\tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.\r\n\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\nsmc-master\\finalAnalyize.py\", line 82, in <module>\r\n    predict_pos_text(sys.argv[2])\r\n  File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\nsmc-master\\finalAnalyize.py\", line 76, in predict_pos_text\r\n    List.append(scroe)\r\nNameError: name 'scroe' is not defined\r\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{"subj":"파이썬","text":"너무 재미있었습니다"},"level":"info"}
+{"message":"subj : 파이썬","level":"info"}
+{"message":"text : 너무 재미있었습니다","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"message":"python script error!Error: Using TensorFlow backend.\r\nWARNING:tensorflow:From C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\tensorflow_core\\python\\ops\\resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.\r\nInstructions for updating:\r\nIf using Keras pass *_constraint arguments to layers.\r\n2020-01-16 18:40:31.197613: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)\nWARNING:tensorflow:From C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\tensorflow_core\\python\\ops\\nn_impl.py:183: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.\r\nInstructions for updating:\r\nUse tf.where in 2.0, which has the same broadcast rule as np.where\r\nWARNING:tensorflow:From C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\lib\\site-packages\\keras\\backend\\tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.\r\n\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\nsmc-master\\finalAnalyize.py\", line 82, in <module>\r\n    predict_pos_text(sys.argv[2])\r\n  File \"C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\nsmc-master\\finalAnalyize.py\", line 76, in predict_pos_text\r\n    List.append(scroe)\r\nNameError: name 'scroe' is not defined\r\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=","level":"info"}
+{"message":"\n","level":"info"}
+{"message":"\n","level":"info"}
+{"message":{"subj":"파이썬","text":"너무 재미있었습니다"},"level":"info"}
+{"message":"subj : 파이썬","level":"info"}
+{"message":"text : 너무 재미있었습니다","level":"info"}
+{"message":"======================lego=====================","level":"info"}
+{"message":"=========================getResultJson=====================","level":"info"}
+{"level":"info","message":"PythonShell results: %j"}

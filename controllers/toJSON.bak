@@ -1,0 +1,184 @@
+
+var http = require('http');
+var iconv = require('iconv-lite');
+var async = require('async');
+
+
+// const arrayParam = ["userNo", "url", "videoName", "sessionId", "isRealTime", "level"];
+
+// ************      수정부분     *************** //
+const arrayParam = ['id','subj','text']
+
+const arrayErrorMsg = ["invalid request", "invalid url", "download failed"];
+const arrayParamSize = arrayParam.length;
+
+const pythonScriptPath = "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37\\nsmc-master";
+const charSet = 'UTF-8';
+                    
+//import library
+//필요한 모듈 설치해줘야함
+var dateFormat = require('dateformat');
+var fs = require('fs');
+var utf8 = require('utf8');
+
+// node 버전에 따라 호환이 안되서 대체
+// var pythonShell = require('python-shell');
+let {PythonShell} = require('python-shell');
+
+var request = require("request");
+var winston = require('winston');
+
+const logDir = 'log';
+var tsFormat;
+// --------------------------------------------------------------
+//
+// Class Variables
+//
+// --------------------------------------------------------------
+var paramMap = new Map();
+var url = new String();
+
+var mode = "transcoding";
+
+var now;
+var date;
+var datetime;
+var logger;
+
+
+function getResultJson(success, msg) {
+  logger.info("=========================getResultJson=====================");
+  var result = {}; // {}:key,value를 가지는 객체 | []:배열 
+  result["success"] = success;
+  return result;
+}
+
+// test !! Success
+
+// 일단 하나만 받는다고 가정할 것 
+// async, await을 쓰려면 promise가 있어야함.. 지금 상태는 작동안할 것 
+function lego(){
+  console.log('======================lego=====================');
+  var pyArgs = [];
+
+    // id, subj, text 를 인자로 넣는다.
+    pyArgs.push(paramMap.get(arrayParam[0]));
+    pyArgs.push(paramMap.get(arrayParam[1]));
+    pyArgs.push(paramMap.get(arrayParam[2]));
+  
+    console.log('pyArgs[0] : ',pyArgs[0]);
+    console.log('pyArgs[1] : ',pyArgs[1]);
+    console.log('pyArgs[2] : ',pyArgs[2]);
+
+  var options = {
+    mode: 'text',
+    pythonPath: '',
+    pythonOptions: ['-u'],
+    scriptPath: pythonScriptPath,
+    args: pyArgs
+  };
+  
+  var finalresult = '';
+
+  console.log("pythonShell.run 들어가기전")
+  var result = PythonShell.run('finalAnalyize.py', options, function (err, results) {
+    if (err) {
+      console.log('python script error!', err);
+      throw err;
+    }
+    
+    finalresult = results[0].slice(2,-2)
+    console.log('results[0].slice(2,-2):', results[0].slice(2,-2));
+    console.log('typeof(results[0].slice(2,-2)) :', typeof(results[0].slice(2,-2)));
+    finalresult = finalresult.split('\', \'')
+    console.log('finalresult : ', finalresult);
+    console.log('typeof(finalresult):', typeof(finalresult));
+
+  });
+
+  // 리스트 ['text값','emotion값','score값'] 리턴 
+  return finalresult;
+
+}
+
+module.exports.toJSON = function(res, req, next){
+  var options = {
+    host: 'ehrd.kbstar.com',
+    port:80,
+    path: '/pls/cyber/z_wootest.test_text?p_subj=1211517'
+  };
+
+  var fbResponse;
+
+  http.get(options, function(res){
+    var body = '';
+
+    console.log('STATUS: ' + res.statusCode);
+    console.log('HEADERS: ' + JSON.stringify(res.headers));
+
+    //결코 순서대로 찍히지 않는다 왜? 비동기임. 요청하고 지나감.
+    res.on('data',function(chunk){
+      body += chunk;
+    });
+    res.on('end', function(){
+      // JSON의 리스트를 받았다. 리스트의 길이를 구하고
+      // 길이만큼 포문을 돌리되 가져올 것만 돌린다. '
+      console.log('------------------------------------------------------------res body');
+
+      // sql에서 받은 escape..처리 
+      console.log(decodeURIComponent(unescape(body)));
+      body = decodeURIComponent(unescape(body));
+      //console.log(iconv.decode(body, 'euc-kr'));
+
+      fbResponse = JSON.parse(body);
+      var arrlength = fbResponse.users.length;
+      var arrlength2 = arrayParam.length;
+      
+      // 3개의 제이슨 리스트중 한 셋트만 일단 매칭한다.
+      paramMap.set(arrayParam[0], fbResponse.users[0].id);
+      paramMap.set(arrayParam[1], fbResponse.users[0].subj);
+      paramMap.set(arrayParam[2], fbResponse.users[0].text);
+    
+      lego();
+      
+    });
+  }).on('error', function(e){
+      console.log("Got an error : ", e);
+  });
+
+  
+}
+
+// MODULE
+module.exports.analyize = function (res, req, next) {
+ 
+  logger.info('=-=-=-=-=-=-=-= uploadVideo script start =-=-=-=-=-=-=-=');
+  console.log('파라미터검증');
+  logger.info(req.body); // req.body로 값들을 다 받아옴...
+  for (p in arrayParam) { // arrayParam에 있는 키값들을 순회하면서 원하는 값들을 키에
+    // if (!req.body[arrayParam[p]]) {
+    //   //optional param
+    //   if(arrayParam[p] != 'text'){
+    //     res.json(getResultJson(0, 0));
+    //     return;
+    //   }
+    // }
+    // 위 배열에 있는 '키'에 따른 '값'이 무엇인지 찍어보기
+    logger.info(arrayParam[p] + ' : ' + req.body[arrayParam[p]]);
+    console.log(arrayParam[p], ' : ', req.body[arrayParam[p]]);
+
+    // 이제 '키'와'값'을 매칭하여 셋팅
+    paramMap.set(arrayParam[p], req.body[arrayParam[p]]);
+  }
+  // 셋팅해놓은대로..이제 get으로 꺼내와서 원하는 '키'에 값 배정하기   
+  subj = paramMap.get(arrayParam[0]);
+  text = paramMap.get(arrayParam[1]);
+
+  console.log('다시한번'+subj);
+  console.log('다시한번'+text);
+  
+  lego(subj, text);
+
+  // downloadVideoFile(res);
+  res.json(getResultJson(1));
+}
